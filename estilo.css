@@ -1,0 +1,670 @@
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+body {
+  background: #abaab1;
+  background: radial-gradient(circle, #abaab1 0%, #c5c5cb 35%, rgba(201, 200, 206, 0.616) 100%);
+  font-family: "Mukta", sans-serif;
+}
+
+.avatarContainer {
+  color: black;
+  background-image: url("media/sheep.PNG");
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.avatarContainer--mod {
+  color: black;
+  background-image: url("media/sheep.PNG");
+  background-position: center;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+}
+
+.tuto-1 {
+  width: 2em;
+  height: 2em;
+}
+
+.tuto-2 {
+  width: 4em;
+  height: 4em;
+}
+
+.color-blue {
+  background-color: blue;
+  height: 200px;
+  width: 100%;
+}
+
+.color-blueviolet {
+  background-color: blueviolet;
+  height: 200px;
+  width: 100%;
+}
+
+.color-fuchsia {
+  background-color: fuchsia;
+  height: 200px;
+  width: 100%;
+}
+
+/*Creamos el bucle para usar los valores del mapa*/
+.btn--pasoa {
+  background-color: #b8c8d4;
+}
+
+.btn--pasob {
+  background-color: #c9b3cc;
+}
+
+.btn--pasoc {
+  background-color: #884d7e;
+}
+
+@media screen and (max-width: 575px) {
+  #contUno {
+    width: 70%;
+    height: 70%;
+    font-size: smaller;
+  }
+
+  #contDos {
+    width: 70%;
+    height: 70%;
+    font-size: smaller;
+  }
+
+  #contTres {
+    width: 70%;
+    height: 70%;
+    font-size: smaller;
+  }
+
+  #contCuatro {
+    width: 50%;
+    height: 50%;
+    font-size: smaller;
+  }
+
+  #contCinco {
+    width: 50%;
+    height: 50%;
+    font-size: smaller;
+  }
+
+  #videoSection {
+    width: 50%;
+    height: 50%;
+    font-size: smaller;
+  }
+
+  .btn-group {
+    width: 10px;
+    align-items: center;
+  }
+
+  #grilla {
+    display: grid;
+    grid-template-areas: "sup sup sup" "hSection hSection hSection" "contUno contDos contTres" "contCuatro contCinco none" "videoSection videoSection videoSection" "descripServ descripServ descripServ" "contactoSection contactoSection contactoSection" "contactoFooter contactoFooter contactoFooter" "barraFooter barraFooter barraFooter";
+    grid-template-rows: 5% 3% 5% 5% 15% 35% 35% 10% 5%;
+    grid-template-columns: 33% 33% 33%;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #grilla {
+    display: grid;
+    grid-template-areas: "sup sup sup" "hSection hSection hSection" "contUno contDos videoSection" "contTres contCuatro videoSection" "none contCinco videoSection" "descripServ descripServ descripServ" "contactoSection contactoSection contactoSection" "contactoFooter contactoFooter contactoFooter" "barraFooter barraFooter barraFooter";
+    grid-template-rows: 8% 3% 9% 9% 9% 35% 35% 10% 5%;
+    grid-template-columns: 20% 20% auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+
+  #grillaVenta {
+    display: grid;
+    grid-template-areas: "sup sup" "hSection hSection" "filtroCategorias filtroCategorias" "filtrosBarra galeriaImag" "contactoFooter contactoFooter";
+    grid-template-rows: 13% 5% 7% 60% 17%;
+    grid-template-columns: 20% auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+
+  #grillaTutoriales {
+    display: grid;
+    grid-template-areas: "sup sup" "hSection hSection" "filtrosBarra galeriaImag" "contactoFooter contactoFooter";
+    grid-template-rows: 20% 20% 80% 25%;
+    grid-template-columns: 20% auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+
+  #grillaCompra {
+    display: grid;
+    grid-template-areas: "sup" "hSection" "formularioContenedor" "contactoFooter";
+    grid-template-rows: 20% 11% 50% 25%;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+
+  #grillaCuenta {
+    display: grid;
+    grid-template-areas: "sup" "hSection" "contactoInicio" "contactoRegistro" "contactoFooter";
+    grid-template-rows: 17% 5% 20% 50% 25%;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+
+  #grillaEstado {
+    display: grid;
+    grid-template-areas: "sup" "hSection" "galeriaImag" "contactoFooter";
+    grid-template-rows: 25% 7% 80% 30%;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+
+  #grillaProdcarrito {
+    display: grid;
+    grid-template-areas: "sup" "hSection" "bodySteps" "contactoFooter";
+    grid-template-rows: 20% 10% 60% 25%;
+    grid-template-columns: auto;
+    grid-row-gap: 10px;
+    grid-column-gap: 5px;
+    width: 100%;
+  }
+}
+@keyframes un_efecto {
+  0% {
+    transform: rotate(90deg);
+  }
+  15% {
+    transform: translate(0, -40px) rotate(135deg);
+  }
+  20% {
+    transform: translate(15, -40px) rotate(180deg);
+  }
+  25% {
+    transform: translate(30px, -40px) rotate(225deg);
+  }
+  30% {
+    transform: translate(45px, -40px) rotate(270deg);
+  }
+  35% {
+    transform: translate(60px, -40px) rotate(315deg);
+  }
+  40% {
+    transform: translate(75px, -40px) rotate(360deg);
+  }
+  45% {
+    transform: translate(90px, -40px) rotate(315deg);
+  }
+  50% {
+    transform: translate(75px, -40px) rotate(270deg);
+  }
+  55% {
+    transform: translate(60px, -40px) rotate(225deg);
+  }
+  60% {
+    transform: translate(45px, -40px) rotate(180deg);
+  }
+  65% {
+    transform: translate(30px, -40px) rotate(135deg);
+  }
+  70% {
+    transform: translate(15px, -40px) rotate(90deg);
+  }
+  75% {
+    transform: translate(0, 0px);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+.efecto {
+  animation: un_efecto 4s infinite;
+}
+
+.iconTransition {
+  transition: height 2s, width 1s;
+  background-color: fuchsia;
+  opacity: 0.9;
+  margin: 1px;
+  padding: 0px;
+  font-size: small;
+  word-spacing: normal;
+  width: 50px;
+  border-radius: 5%;
+}
+
+.iconTransition:hover {
+  transform: scale(1.5, 1.5);
+  background-color: blueviolet;
+  opacity: 1;
+}
+
+.buttonTransition {
+  transition: height 2s, width 1s;
+}
+
+.buttonTransition:hover {
+  transform: translate(5px, 5px);
+  background-color: fuchsia;
+}
+
+.imagTransition {
+  transition: height 2s, width 1s;
+}
+
+.imagTransition:hover {
+  transform: scale(1.3, 1.3);
+}
+
+.header__logoBuy {
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  text-align: right;
+  padding: 5px;
+  color: ivory;
+}
+
+#hSection {
+  grid-area: hSection;
+  width: 100%;
+}
+
+#filtroCategorias {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: center;
+  background-color: blue;
+  color: white;
+  height: 100px;
+  padding: 10px;
+  grid-area: filtroCategorias;
+  width: 90%;
+  justify-self: center;
+}
+
+#header__search {
+  text-align: left;
+  height: 120px;
+  width: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  border-bottom: solid 2px;
+  border-color: grey;
+}
+
+#sup {
+  grid-area: sup;
+}
+
+#contUno {
+  grid-area: contUno;
+  justify-self: center;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: bold;
+}
+
+#contDos {
+  grid-area: contDos;
+  justify-self: center;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: bold;
+}
+
+#contTres {
+  grid-area: contTres;
+  justify-self: center;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: bold;
+}
+
+#contCuatro {
+  grid-area: contCuatro;
+  justify-self: center;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: bold;
+}
+
+#contCinco {
+  grid-area: contCinco;
+  justify-self: center;
+  font-family: "Mukta Malar", sans-serif;
+  font-weight: bold;
+}
+
+#videoSection {
+  grid-area: videoSection;
+  width: 95%;
+  height: 90%;
+  justify-self: center;
+}
+
+#descripServ {
+  grid-area: descripServ;
+  height: 90%;
+  justify-self: center;
+}
+
+#filtrosBarra {
+  height: 420px;
+  margin: 20px;
+  padding: 10px;
+  grid-area: filtrosBarra;
+  width: 100%;
+}
+
+#iconPart {
+  display: flex;
+  height: 60px;
+  flex-direction: row;
+}
+
+#iconPlace {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  height: 50px;
+  font-size: large;
+}
+
+#iconNext {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin: 20px;
+  height: 50px;
+}
+
+ul {
+  list-style-type: circle;
+  padding-left: 40px;
+  font-style: italic;
+}
+
+.uli {
+  list-style: none;
+  font-size: 0;
+}
+
+.ili {
+  display: inline-block;
+  position: relative;
+  font-size: 14px;
+}
+
+.uli .uli {
+  position: absolute;
+  display: none;
+}
+
+.uli .uli .ili {
+  display: block;
+  width: 200px;
+  background-color: #a35fa3;
+  margin: 5px;
+  border: solid white 2px;
+}
+
+.uli .ili:hover .uli {
+  display: block;
+}
+
+#logo {
+  display: inline;
+}
+
+h4 {
+  font-style: italic;
+}
+
+h2 {
+  background-color: blueviolet;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 90%;
+  font-size: small;
+}
+
+h1 {
+  background-color: blueviolet;
+  color: white;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 90%;
+  font-size: medium;
+}
+
+#contactoSection__contacto {
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  margin: 5px;
+}
+
+#contactoInicio {
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+  height: 95%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  margin: 5px;
+  grid-area: contactoInicio;
+}
+
+#contactoRegistro {
+  background-color: blueviolet;
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  margin: 5px;
+  grid-area: contactoRegistro;
+}
+
+#contactoSection {
+  grid-area: contactoSection;
+  justify-self: center;
+}
+
+#formularioUsuario {
+  background-color: fuchsia;
+  color: white;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#formularioContenedor {
+  grid-area: formularioContenedor;
+}
+
+section {
+  float: left;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+table {
+  width: 100%;
+  height: 90%;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: smaller;
+}
+
+/*tbody tr:nth-child(odd) {
+    background-color: gainsboro;
+}
+tbody tr:nth-child(even) {
+    background-color: white;
+}
+th{
+    font-family:serif;
+    color: aliceblue;
+    background-color: rgb(39, 6, 48);
+}*/
+td {
+  padding-left: 20px;
+}
+
+.border {
+  border-radius: 1%;
+  border-style: solid;
+  border-color: whitesmoke;
+  border-width: 0.1cm;
+  margin: 5px;
+}
+
+button {
+  background-color: blueviolet;
+  font-size: medium;
+  word-spacing: normal;
+  height: 35px;
+  font-family: "Mukta Malar", sans-serif;
+  border: none;
+  width: 200px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+#carrito {
+  display: flex;
+  flex-flow: row-reverse nowrap;
+  align-content: space-around;
+  margin: 1px;
+  align-items: center;
+}
+
+.white {
+  color: white;
+}
+
+#datosGen {
+  width: 45%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: inline;
+}
+
+#datosServ {
+  width: 45%;
+  height: 100%;
+  margin: 10px;
+  padding: 10px;
+  display: inline;
+}
+
+#contactoFooter {
+  grid-area: contactoFooter;
+  display: grid;
+  grid-template-areas: "conoceFooter pagoFooter";
+  grid-template-columns: 50% 50%;
+  grid-row-gap: 1px;
+  grid-column-gap: 1px;
+  justify-items: center;
+  float: left;
+}
+
+.contactoFooter__conoce {
+  grid-area: conoceFooter;
+  width: 90%;
+}
+
+.contactoFooter__pago {
+  grid-area: pagoFooter;
+  width: 90%;
+}
+
+footer {
+  padding: 5px;
+  color: white;
+  height: 90%;
+}
+
+#iconfoot {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#galeriaImag {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: center;
+  background-color: fuchsia;
+  margin: 20px;
+  grid-area: galeriaImag;
+  width: 100%;
+  overflow: scroll;
+}
+
+#tablaGaleria {
+  float: left;
+  width: 30%;
+  height: 30%;
+  padding: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: smaller;
+  float: left;
+}
+
+#barraFooter {
+  height: 100%;
+  grid-area: barraFooter;
+}
+
+#bodySteps {
+  grid-area: bodySteps;
+  height: 100%;
+}
+
+/*# sourceMappingURL=estilo.css.map */
