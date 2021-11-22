@@ -9,6 +9,7 @@
 
     $tamanoa:575px;
     $tamanob:576px;
+    $tamanoc:768px;
     $fuchsia: fuchsia;
     $blueviolet: blueviolet;
     $blue:blue;
@@ -148,7 +149,7 @@ background-color: $color;
                 "contactoSection contactoSection contactoSection"
                 "contactoFooter contactoFooter contactoFooter"
                 "barraFooter barraFooter barraFooter";
-            grid-template-rows: 5% 3% 5% 5% 15% 35% 35% 10% 5%; 
+            grid-template-rows: 5% 3% 5% 5% 15% 35% 40% 10% 5%; 
             grid-template-columns: 33% 33% 33%;
             grid-row-gap: 10px;
             grid-column-gap: 5px;
@@ -157,6 +158,142 @@ background-color: $color;
     }
 
     @media only screen and (min-width:$tamanob) {
+    
+        #contUno{
+            width: 70%;
+            height: 70%;
+            font-size: smaller;
+            }
+        #contDos{
+            width: 70%;
+            height: 70%;
+            font-size: smaller;
+            }
+        #contTres{
+            width: 70%;
+            height: 70%;
+            font-size: smaller;
+            }
+        #contCuatro{
+            width: 50%;
+            height: 50%;
+            font-size: smaller;
+            }
+        #contCinco{
+            width: 50%;
+            height: 50%;
+            font-size: smaller;
+            }
+        #videoSection{
+            width: 50%;
+            height: 50%;
+            font-size: smaller;
+            }
+        .btn-group{
+                width: 10px;
+                align-items: center;
+            }
+        #grilla {
+                display: grid;
+                grid-template-areas:
+                    "sup sup sup"
+                    "hSection hSection hSection"
+                    "contUno contDos contTres"
+                    "contCuatro contCinco none"
+                    "videoSection videoSection videoSection"
+                    "descripServ descripServ descripServ"
+                    "contactoSection contactoSection contactoSection"
+                    "contactoFooter contactoFooter contactoFooter"
+                    "barraFooter barraFooter barraFooter";
+                grid-template-rows: 5% 3% 5% 5% 15% 35% 35% 10% 5%; 
+                grid-template-columns: 33% 33% 33%;
+                grid-row-gap: 10px;
+                grid-column-gap: 5px;
+                width: 100%;
+        }
+    #grillaVenta{
+        display: grid;
+        grid-template-areas:
+            "sup sup"
+            "hSection hSection"
+            "filtroCategorias filtroCategorias"
+            "filtrosBarra galeriaImag"
+            "contactoFooter contactoFooter";
+        grid-template-rows: 13% 5% 7% 60% 17%; 
+        grid-template-columns: 20% auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+    #grillaTutoriales{
+        display: grid;
+        grid-template-areas:
+            "sup sup"
+            "hSection hSection"
+            "filtrosBarra galeriaImag"
+            "contactoFooter contactoFooter";
+        grid-template-rows: 20% 20% 80% 25%; 
+        grid-template-columns: 20% auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+    #grillaCompra{
+        display: grid;
+        grid-template-areas:
+            "sup"
+            "hSection"
+            "formularioContenedor"
+            "contactoFooter";
+        grid-template-rows: 20% 11% 50% 25%; 
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+    #grillaCuenta{
+        display: grid;
+        grid-template-areas:
+            "sup"
+            "hSection"
+            "contactoInicio"
+            "contactoRegistro"
+            "contactoFooter";
+        grid-template-rows: 17% 5% 20% 50% 25%; 
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+    #grillaEstado{
+        display: grid;
+        grid-template-areas:
+            "sup"
+            "hSection"
+            "galeriaImag"
+            "contactoFooter";
+        grid-template-rows: 25% 7% 80% 30%; 
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+    #grillaProdcarrito{
+        display: grid;
+        grid-template-areas: 
+            "sup"
+            "hSection"
+            "bodySteps"
+            "contactoFooter";
+        grid-template-rows: 20% 10% 60% 25%; 
+        grid-template-columns: auto;
+        grid-row-gap: 10px;
+        grid-column-gap: 5px;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:$tamanoc) {
     #grilla {
         display: grid;
         grid-template-areas:
