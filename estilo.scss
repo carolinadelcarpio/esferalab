@@ -133,9 +133,27 @@ background-color: $color;
         height: 50%;
         font-size: smaller;
         }
-        .btn-group{
-            width: 10px;
-            align-items: center;
+        .navbar-toggler{
+            width: 150px;
+        }
+        button{
+            background-color:$blueviolet;
+            font-size:medium;
+            word-spacing: normal;
+            height: 35px;
+            font-family: 'Mukta Malar', sans-serif;
+            border: none;
+            width: 150px;
+            margin-left: 40px;
+            margin-right: 40px;
+            position: inherit;
+            align-items:center;
+        }
+        .nav-link{
+            font-size: smaller;
+        }
+        .nav-item{
+            margin: 5px;
         }
         #grilla {
             display: grid;
@@ -149,11 +167,76 @@ background-color: $color;
                 "contactoSection contactoSection contactoSection"
                 "contactoFooter contactoFooter contactoFooter"
                 "barraFooter barraFooter barraFooter";
-            grid-template-rows: 5% 3% 5% 5% 15% 35% 40% 10% 5%; 
+            grid-template-rows: 400px 100px 200px 200px 600px 1300px 1780px 250px 80px; 
             grid-template-columns: 33% 33% 33%;
             grid-row-gap: 10px;
             grid-column-gap: 5px;
             width: 100%;
+        }
+        #grillaProdcarrito{
+            display: grid;
+            grid-template-areas: 
+                "sup"
+                "hSection"
+                "bodySteps"
+                "contactoFooter";
+            grid-template-rows: 30% 10% 45% 20%; 
+            grid-template-columns: auto;
+            grid-row-gap: 10px;
+            grid-column-gap: 5px;
+            width: 100%;
+        }
+        h2{
+            background-color: $blueviolet;
+            color: $white;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 90%;
+            font-size:x-small;
+        }
+        h1{
+            background-color: $blueviolet;
+            color: $white;
+            padding-left: 5px;
+            padding-right: 5px;
+            width: 90%;
+            font-size: smaller;
+        }
+        #header__search{
+            text-align: left;
+            height: 300px;
+            width: 100%;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-bottom: 30px;
+            margin-bottom: 10px;
+            background-color:$white;
+            border-bottom: solid 2px;
+            border-color: $grey;
+        }
+        #iconPart{
+            display: flex;
+            height: 100px;
+            flex-direction: row;
+            align-items: center;
+            padding-top: 130px;
+        }
+        #iconPlace{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+            margin: 20px;
+            height: 90px;
+            font-size: large;
+        }
+        #iconNext{
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            
+            margin: 20px;
+            height: 0px;
         }
     }
 
@@ -189,10 +272,12 @@ background-color: $color;
             height: 50%;
             font-size: smaller;
             }
-        .btn-group{
-                width: 10px;
-                align-items: center;
-            }
+        .navbar-toggler{
+            width: 250px;
+        }
+        .nav-item{
+            margin: 5px;
+        }
         #grilla {
                 display: grid;
                 grid-template-areas:
@@ -205,7 +290,7 @@ background-color: $color;
                     "contactoSection contactoSection contactoSection"
                     "contactoFooter contactoFooter contactoFooter"
                     "barraFooter barraFooter barraFooter";
-                grid-template-rows: 5% 3% 5% 5% 15% 35% 35% 10% 5%; 
+                grid-template-rows: 400px 100px 200px 200px 600px 1300px 950px 260px 80px; 
                 grid-template-columns: 33% 33% 33%;
                 grid-row-gap: 10px;
                 grid-column-gap: 5px;
@@ -219,7 +304,7 @@ background-color: $color;
             "filtroCategorias filtroCategorias"
             "filtrosBarra galeriaImag"
             "contactoFooter contactoFooter";
-        grid-template-rows: 13% 5% 7% 60% 17%; 
+        grid-template-rows: 400px 150px 150px 1500px 280px; 
         grid-template-columns: 20% auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -232,7 +317,7 @@ background-color: $color;
             "hSection hSection"
             "filtrosBarra galeriaImag"
             "contactoFooter contactoFooter";
-        grid-template-rows: 20% 20% 80% 25%; 
+        grid-template-rows: 430px 190px 1000px 300px; 
         grid-template-columns: 20% auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -245,7 +330,7 @@ background-color: $color;
             "hSection"
             "formularioContenedor"
             "contactoFooter";
-        grid-template-rows: 20% 11% 50% 25%; 
+        grid-template-rows: 420px 150px 600px 350px; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -259,7 +344,7 @@ background-color: $color;
             "contactoInicio"
             "contactoRegistro"
             "contactoFooter";
-        grid-template-rows: 17% 5% 20% 50% 25%; 
+        grid-template-rows: 400px 50px 400px 800px 400px; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -272,7 +357,7 @@ background-color: $color;
             "hSection"
             "galeriaImag"
             "contactoFooter";
-        grid-template-rows: 25% 7% 80% 30%; 
+        grid-template-rows: 400px 50px 1000px 300px; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -285,11 +370,73 @@ background-color: $color;
             "hSection"
             "bodySteps"
             "contactoFooter";
-        grid-template-rows: 20% 10% 60% 25%; 
+        grid-template-rows: 400px 70px 650px 400px; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
         width: 100%;
+    }
+    button{
+        background-color:$blueviolet;
+        font-size:medium;
+        word-spacing: normal;
+        height: 35px;
+        font-family: 'Mukta Malar', sans-serif;
+        border: none;
+        width: 200px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    h2{
+        background-color: $blueviolet;
+        color: $white;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 90%;
+        font-size:small;
+    }
+    h1{
+        background-color: $blueviolet;
+        color: $white;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 90%;
+        font-size: medium;
+    }
+    #header__search{
+        text-align: left;
+        height: 300px;
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        background-color:$white;
+        border-bottom: solid 2px;
+        border-color: $grey;
+    }
+    #iconPart{
+        display: flex;
+        height: 120px;
+        flex-direction: row;
+        padding-top: 70px;
+    }
+    #iconPlace{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        margin: 5px;
+        height: 110px;
+        font-size: large;
+    }
+    #iconNext{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+        margin: 5px;
+        height: 110px;
     }
 }
 
@@ -306,7 +453,7 @@ background-color: $color;
             "contactoSection contactoSection contactoSection"
             "contactoFooter contactoFooter contactoFooter"
             "barraFooter barraFooter barraFooter";
-        grid-template-rows: 8% 3% 9% 9% 9% 35% 35% 10% 5%; 
+        grid-template-rows: 300px 3% 9% 9% 9% 35% 35% 10% 5%; 
         grid-template-columns: 20% 20% auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -333,7 +480,7 @@ background-color: $color;
             "hSection hSection"
             "filtrosBarra galeriaImag"
             "contactoFooter contactoFooter";
-        grid-template-rows: 20% 20% 80% 25%; 
+        grid-template-rows: 25% 15% 80% 25%; 
         grid-template-columns: 20% auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -346,7 +493,7 @@ background-color: $color;
             "hSection"
             "formularioContenedor"
             "contactoFooter";
-        grid-template-rows: 20% 11% 50% 25%; 
+        grid-template-rows: 23% 11% 50% 25%; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -360,7 +507,7 @@ background-color: $color;
             "contactoInicio"
             "contactoRegistro"
             "contactoFooter";
-        grid-template-rows: 17% 5% 20% 50% 25%; 
+        grid-template-rows: 20% 5% 20% 45% 25%; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -373,7 +520,7 @@ background-color: $color;
             "hSection"
             "galeriaImag"
             "contactoFooter";
-        grid-template-rows: 25% 7% 80% 30%; 
+        grid-template-rows: 30% 7% 80% 30%; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
@@ -386,11 +533,79 @@ background-color: $color;
             "hSection"
             "bodySteps"
             "contactoFooter";
-        grid-template-rows: 20% 10% 60% 25%; 
+        grid-template-rows: 23% 7% 50% 25%; 
         grid-template-columns: auto;
         grid-row-gap: 10px;
         grid-column-gap: 5px;
         width: 100%;
+    }
+    button{
+        background-color:$blueviolet;
+        font-size:medium;
+        word-spacing: normal;
+        height: 35px;
+        font-family: 'Mukta Malar', sans-serif;
+        border: none;
+        width: 200px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    #hamburger{
+        height: 50px;
+    }
+    .nav-item{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h2{
+        background-color: $blueviolet;
+        color: $white;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 90%;
+        font-size:small;
+    }
+    h1{
+        background-color: $blueviolet;
+        color: $white;
+        padding-left: 5px;
+        padding-right: 5px;
+        width: 90%;
+        font-size: medium;
+    }
+    #header__search{
+        text-align: left;
+        height: 200px;
+        width: 100%;
+        padding-right: 5px;
+        padding-left: 5px;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        background-color:$white;
+        border-bottom: solid 2px;
+        border-color: $grey;
+    }
+    #iconPart{
+        display: flex;
+        height: 20px;
+        flex-direction: row;
+    }
+    #iconPlace{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        
+        height: 10px;
+        font-size: large;
+    }
+    #iconNext{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        
+        
+        height: 10px;
     }
 }
 
@@ -426,7 +641,7 @@ background-color: $color;
         border-radius: 5%;
     }
     .iconTransition:hover{
-        transform:scale(1.5,1.5) ;
+        transform:scale(1.1,1.1) ;
         background-color:$blueviolet;
         opacity: 1;
     }
@@ -467,18 +682,6 @@ background-color: $color;
         grid-area: filtroCategorias;
         width: 90%;
         justify-self: center;
-    }
-    #header__search{
-        text-align: left;
-        height: 120px;
-        width: 100%;
-        padding-right: 5px;
-        padding-left: 5px;
-        padding-bottom: 30px;
-        margin-bottom: 10px;
-        background-color:$white;
-        border-bottom: solid 2px;
-        border-color: $grey;
     }
     #sup{
         grid-area: sup;
@@ -531,29 +734,6 @@ background-color: $color;
         grid-area: filtrosBarra;
         width: 100%;
     }
-    #iconPart{
-        display: flex;
-        height: 60px;
-        flex-direction: row;
-        
-    }
-    #iconPlace{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        
-        margin: 20px;
-        height: 50px;
-        font-size: large;
-    }
-    #iconNext{
-        display: flex;
-        flex-direction: row-reverse;
-        align-items: center;
-        
-        margin: 20px;
-        height: 50px;
-    }
     ul{
         list-style-type: circle;
         padding-left: 40px;
@@ -589,22 +769,7 @@ background-color: $color;
     h4{
         font-style: italic;
     }
-    h2{
-        background-color: $blueviolet;
-        color: $white;
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 90%;
-        font-size:small;
-    }
-    h1{
-        background-color: $blueviolet;
-        color: $white;
-        padding-left: 5px;
-        padding-right: 5px;
-        width: 90%;
-        font-size: medium;
-    }
+    
     #contactoSection__contacto{
         background-color: $blueviolet;
         color: $white;
@@ -689,23 +854,14 @@ background-color: $color;
         border-width: 0.1cm;
         margin: 5px;
     }
-    button{
-        background-color:$blueviolet;
-        font-size:medium;
-        word-spacing: normal;
-        height: 35px;
-        font-family: 'Mukta Malar', sans-serif;
-        border: none;
-        width: 200px;
-        margin-left: 40px;
-        margin-right: 40px;
-    }
+    
     #carrito{
         display: flex;
         flex-flow: row-reverse nowrap ;
         align-content: space-around;
         margin: 1px;
         align-items: center;
+        padding: 5px;
     }
     .white{
         color:$white;
