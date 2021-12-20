@@ -4,8 +4,8 @@
 }
 
 body {
-  background: #abaab1;
-  background: radial-gradient(circle, #abaab1 0%, #c5c5cb 35%, rgba(201, 200, 206, 0.616) 100%);
+  background: black;
+  background: radial-gradient(circle, black 0%, black 35%, black 100%);
   font-family: "Mukta", sans-serif;
 }
 
@@ -68,7 +68,7 @@ body {
   background-color: #884d7e;
 }
 
-@media screen and (max-width: 575px) {
+@media screen and (max-width: 360px) {
   #contUno {
     width: 70%;
     height: 70%;
@@ -100,8 +100,6 @@ body {
   }
 
   #videoSection {
-    width: 50%;
-    height: 50%;
     font-size: smaller;
   }
 
@@ -133,21 +131,20 @@ body {
 
   #grilla {
     display: grid;
-    grid-template-areas: "sup sup sup" "hSection hSection hSection" "contUno contDos contTres" "contCuatro contCinco none" "videoSection videoSection videoSection" "descripServ descripServ descripServ" "contactoSection contactoSection contactoSection" "contactoFooter contactoFooter contactoFooter" "barraFooter barraFooter barraFooter";
-    grid-template-rows: 400px 100px 200px 200px 600px 1300px 1780px 250px 80px;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-areas: "hSection hSection hSection hSection" "contUno contDos contCuatro contTres" "videoSection videoSection videoSection videoSection" "descripServ descripServ descripServ descripServ" "contactoSection contactoSection contactoSection contactoSection" "contactoFooter contactoFooter contactoFooter contactoFooter" "barraFooter barraFooter barraFooter barraFooter";
+    grid-template-rows: 40px 50px 250px 550px 1600px 250px 80px;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
     width: 100%;
+    grid-area: grilla;
   }
 
   #grillaProdcarrito {
     display: grid;
     grid-template-areas: "sup" "hSection" "bodySteps" "contactoFooter";
-    grid-template-rows: 30% 10% 45% 20%;
+    grid-template-rows: 30% 15% 50% 20%;
     grid-template-columns: auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 5px;
     width: 100%;
   }
 
@@ -169,45 +166,67 @@ body {
     font-size: smaller;
   }
 
-  #header__search {
-    text-align: left;
-    height: 300px;
-    width: 100%;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 30px;
-    margin-bottom: 10px;
-    background-color: white;
+  #header__logoBuy {
+    grid-area: header__logoBuy;
+    padding-left: 10px;
+    color: white;
     border-bottom: solid 2px;
-    border-color: grey;
+    border-color: white;
   }
 
-  #iconPart {
-    display: flex;
-    height: 100px;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 130px;
+  #carrito {
+    grid-area: carrito;
+    padding: 5px;
+    color: white;
   }
 
   #iconPlace {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px;
-    height: 90px;
+    padding-top: 30px;
     font-size: large;
+    grid-area: iconPlace;
+    padding-left: 20px;
+    color: white;
   }
 
   #iconNext {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    margin: 20px;
-    height: 0px;
+    grid-area: iconNext;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  #breadcrumbPart {
+    grid-area: breadcrumbPart;
+    width: 100%;
+  }
+
+  #datosGen {
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+  }
+
+  #datosServ {
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+  }
+
+  #filtroCategorias {
+    font-size: x-small;
+    width: 100%;
+  }
+
+  #filtrosBarra {
+    font-size: x-small;
   }
 }
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 361px) {
   #contUno {
     width: 70%;
     height: 70%;
@@ -239,8 +258,6 @@ body {
   }
 
   #videoSection {
-    width: 50%;
-    height: 50%;
     font-size: smaller;
   }
 
@@ -360,7 +377,8 @@ body {
     padding-left: 5px;
     padding-bottom: 30px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: black;
+    color: white;
     border-bottom: solid 2px;
     border-color: grey;
   }
@@ -392,9 +410,9 @@ body {
 @media only screen and (min-width: 768px) {
   #grilla {
     display: grid;
-    grid-template-areas: "sup sup sup" "hSection hSection hSection" "contUno contDos videoSection" "contTres contCuatro videoSection" "none contCinco videoSection" "descripServ descripServ descripServ" "contactoSection contactoSection contactoSection" "contactoFooter contactoFooter contactoFooter" "barraFooter barraFooter barraFooter";
-    grid-template-rows: 300px 3% 9% 9% 9% 35% 35% 10% 5%;
-    grid-template-columns: 20% 20% auto;
+    grid-template-areas: "sup sup sup sup" "hSection hSection hSection hSection" "contUno contDos contTres contCuatro" "videoSection videoSection videoSection videoSection" "descripServ descripServ descripServ descripServ" "contactoSection contactoSection contactoSection contactoSection" "contactoFooter contactoFooter contactoFooter contactoFooter";
+    grid-template-rows: 1% 1% 2% 35% 15% 40% 10%;
+    grid-template-columns: 25% 25% 25% 25%;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
     width: 100%;
@@ -403,7 +421,7 @@ body {
   #grillaVenta {
     display: grid;
     grid-template-areas: "sup sup" "hSection hSection" "filtroCategorias filtroCategorias" "filtrosBarra galeriaImag" "contactoFooter contactoFooter";
-    grid-template-rows: 13% 5% 7% 60% 17%;
+    grid-template-rows: 20% 5% 10% 60% 17%;
     grid-template-columns: 20% auto;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -413,7 +431,7 @@ body {
   #grillaTutoriales {
     display: grid;
     grid-template-areas: "sup sup" "hSection hSection" "filtrosBarra galeriaImag" "contactoFooter contactoFooter";
-    grid-template-rows: 25% 15% 80% 25%;
+    grid-template-rows: 30% 10% 80% 25%;
     grid-template-columns: 20% auto;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -423,7 +441,7 @@ body {
   #grillaCompra {
     display: grid;
     grid-template-areas: "sup" "hSection" "formularioContenedor" "contactoFooter";
-    grid-template-rows: 23% 11% 50% 25%;
+    grid-template-rows: 28% 8% 50% 25%;
     grid-template-columns: auto;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -432,18 +450,16 @@ body {
 
   #grillaCuenta {
     display: grid;
-    grid-template-areas: "sup" "hSection" "contactoInicio" "contactoRegistro" "contactoFooter";
-    grid-template-rows: 20% 5% 20% 45% 25%;
-    grid-template-columns: auto;
-    grid-row-gap: 10px;
-    grid-column-gap: 5px;
+    grid-template-areas: "sup" "hSection" "contactoInicio" "contactoRegistro";
+    grid-template-rows: 150px 40px 40px 40px;
+    grid-template-columns: 100%;
     width: 100%;
   }
 
   #grillaEstado {
     display: grid;
     grid-template-areas: "sup" "hSection" "galeriaImag" "contactoFooter";
-    grid-template-rows: 30% 7% 80% 30%;
+    grid-template-rows: 35% 7% 80% 30%;
     grid-template-columns: auto;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -453,7 +469,7 @@ body {
   #grillaProdcarrito {
     display: grid;
     grid-template-areas: "sup" "hSection" "bodySteps" "contactoFooter";
-    grid-template-rows: 23% 7% 50% 25%;
+    grid-template-rows: 23% 10% 55% 25%;
     grid-template-columns: auto;
     grid-row-gap: 10px;
     grid-column-gap: 5px;
@@ -507,30 +523,60 @@ body {
     padding-left: 5px;
     padding-bottom: 30px;
     margin-bottom: 10px;
-    background-color: white;
+    background-color: black;
+    color: white;
     border-bottom: solid 2px;
     border-color: grey;
   }
 
-  #iconPart {
-    display: flex;
-    height: 20px;
-    flex-direction: row;
+  #header__logoBuy {
+    grid-area: header__logoBuy;
+    padding-left: 10px;
+    color: white;
+    border-bottom: solid 2px;
+    border-color: white;
+  }
+
+  #carrito {
+    grid-area: carrito;
+    padding: 5px;
+    color: white;
   }
 
   #iconPlace {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 10px;
+    padding-top: 30px;
     font-size: large;
+    grid-area: iconPlace;
+    padding-left: 20px;
+    color: white;
   }
 
   #iconNext {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    height: 10px;
+    grid-area: iconNext;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  #breadcrumbPart {
+    grid-area: breadcrumbPart;
+    width: 100%;
+  }
+
+  #datosGen {
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    display: inline;
+  }
+
+  #datosServ {
+    width: 40%;
+    height: 100%;
+    padding: 50px;
+    display: inline;
   }
 }
 @keyframes un_efecto {
@@ -574,7 +620,7 @@ body {
     transform: translate(15px, -40px) rotate(90deg);
   }
   75% {
-    transform: translate(0, 0px);
+    transform: translate(0, -40px);
   }
   100% {
     transform: rotate(-90deg);
@@ -620,12 +666,13 @@ body {
 }
 
 .header__logoBuy {
-  background-color: black;
+  background-color: whitesmoke;
   height: 30px;
   width: 100%;
   text-align: right;
   padding: 5px;
-  color: ivory;
+  color: black;
+  margin-top: 5px;
 }
 
 #hSection {
@@ -638,7 +685,7 @@ body {
   flex-flow: row wrap;
   justify-content: space-around;
   align-content: center;
-  background-color: blue;
+  background-color: dodgerblue;
   color: white;
   height: 100px;
   padding: 10px;
@@ -688,7 +735,7 @@ body {
 
 #videoSection {
   grid-area: videoSection;
-  width: 95%;
+  width: 100%;
   height: 90%;
   justify-self: center;
 }
@@ -705,6 +752,7 @@ body {
   padding: 10px;
   grid-area: filtrosBarra;
   width: 100%;
+  color: white;
 }
 
 ul {
@@ -755,14 +803,13 @@ h4 {
   width: 100%;
   height: 100%;
   padding: 10px;
-  margin: 5px;
 }
 
 #contactoInicio {
   background-color: blueviolet;
   color: white;
   width: 100%;
-  height: 95%;
+  height: 100%;
   padding-right: 5px;
   padding-left: 5px;
   padding-bottom: 10px;
@@ -801,6 +848,7 @@ h4 {
 
 #formularioContenedor {
   grid-area: formularioContenedor;
+  justify-content: space-evenly;
 }
 
 section {
@@ -813,7 +861,7 @@ section {
 
 table {
   width: 100%;
-  height: 90%;
+  height: 100%;
   padding: 5px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -856,22 +904,6 @@ td {
   color: white;
 }
 
-#datosGen {
-  width: 45%;
-  height: 100%;
-  margin: 10px;
-  padding: 10px;
-  display: inline;
-}
-
-#datosServ {
-  width: 45%;
-  height: 100%;
-  margin: 10px;
-  padding: 10px;
-  display: inline;
-}
-
 #contactoFooter {
   grid-area: contactoFooter;
   display: grid;
@@ -885,12 +917,12 @@ td {
 
 .contactoFooter__conoce {
   grid-area: conoceFooter;
-  width: 90%;
+  width: 100%;
 }
 
 .contactoFooter__pago {
   grid-area: pagoFooter;
-  width: 90%;
+  width: 100%;
 }
 
 footer {
@@ -942,6 +974,10 @@ footer {
 #bodySteps {
   grid-area: bodySteps;
   height: 100%;
+}
+
+p {
+  color: white;
 }
 
 /*# sourceMappingURL=estilo.css.map */
